@@ -15,3 +15,7 @@ Python Syntax compared to other programming languages:
 Python was designed for readability, and has some similarities to the English language with influence from mathematics.
 Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.
 Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.
+
+Python can run a command line itself. You have to write python in the command line to open the python interpreter - from there you are able to write anything in the command line. To exit() the python operator type exit() in the command line.
+
+Python indentation is very important because it indicates a block of code. Most common use if four but has to be atleast one.
