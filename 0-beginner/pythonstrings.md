@@ -63,3 +63,30 @@ In an if statement:
 txt = "The best things in life are free!"
 if "free" in txt:
   print("Yes, 'free' is present.")
+
+
+## Check if NOT
+
+To check if a certain phrase or character is NOT present in a string, we can use the keyword not in.
+
+txt = "The best things in life are free!"
+print("expensive" not in txt)
+
+## Slicing Strings
+
+You can return a range of characters by using the slice syntax.
+
+Specify the start index and the end index, separated by a colon, to return a part of the string.
+
+What is happening here " b = "Hello, World!"  print(b[2:5])"→Slicing strings, Get the characters from position 2 to position 5 (not included)
+
+Note: The first character has index 0.
+
+### Slice from the Start
+
+By leaving out the start index, the range will start at the first character:
+b = "Hello, World!"
+print(b[:5])
+
+### Slice to the End
+
