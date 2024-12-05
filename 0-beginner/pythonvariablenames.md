@@ -61,3 +61,16 @@ x = "Python"
 y = "is"
 z = "awesome"
 print(x, y, z)
+
+The best way to output multiple variables in the print() function is to separate them with commas, which even support different data types.
+
+## + Sign
+
+For numbers, the + character works as a mathematical operator.
+x = 5
+y = 10
+print(x + y)
+
+You can also use the + operator to output multiple variables.
+
+SPECIAL CASE: In the print() function, when you try to combine a string and a number with the + operator, Python will give you an error.

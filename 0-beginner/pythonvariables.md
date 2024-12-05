@@ -27,3 +27,20 @@ z = float(3)  # z will be 3.0
 ## Get the Type
 
 You can get the data type of a variable with the type() function.
+
+# Global Variables
+
+Variables the are created outside of a function are known as global variables.
+
+If you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function. 
+
+To create a global variable inside a function use the global keyword.Also, use the global keyword if you want to change a global variable inside a function.
+
+Example:
+def myfunc():
+  global x
+  x = "fantastic"
+
+myfunc()
+
+print("Python is " + x)
