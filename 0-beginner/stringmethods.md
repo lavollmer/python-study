@@ -1,6 +1,5 @@
 # String Methods
 
-Method	Description
 capitalize()	Converts the first character to upper case
 casefold()	Converts string into lower case
 center()	Returns a centered string
