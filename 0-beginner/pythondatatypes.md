@@ -30,10 +30,10 @@ x = 1    # int
 y = 2.8  # float
 z = 1j   # complex
 
-Int
+### Int
 Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.
 
-Float
+### Float
 Float, or "floating point number" is a number, positive or negative, containing one or more decimals.Float can also be scientific numbers with an "e" to indicate the power of 10.
 
 Example of scientific float:
@@ -41,7 +41,7 @@ x = 35e3
 y = 12E4
 z = -87.7e100
 
-Complex
+### Complex
 Complex numbers are written with a "j" as the imaginary part:
 x = 3+5j
 y = 5j
@@ -79,3 +79,18 @@ Python does not have a random() function to make a random number, but Python has
 import random
 
 print(random.randrange(1, 10))
+
+## Python Casting
+There may be times when you want to specify a type on to a variable. This can be done with casting. Python is an object-orientated language, and as such it uses classes to define data types, including its primitive types.
+
+Casting in python is done using constructor functions.
+int() - constructs an integer number from an integer literal, a float literal (by removing all decimals), or a string literal (providing the string represents a whole number)
+float() - constructs a float number from an integer literal, a float literal or a string literal (providing the string represents a float or an integer)
+str() - constructs a string from a wide variety of data types, including strings, integer literals and float literals
+
+Example:
+x = int(1)   # x will be 1
+y = int(2.8) # y will be 2
+z = int("3") # z will be 3
+
+Int casting always rounds down with decimals.
