@@ -86,3 +86,28 @@ Display the price with 2 decimals:
 price = 59
 txt = f"The price is {price:.2f} dollars"
 print(txt)
+
+A placeholder can contain Python code, like math operations:
+Perform a math operation in the placeholder, and return the result:
+
+txt = f"The price is {20 * 59} dollars"
+print(txt)
+
+## Escape Characters
+
+To insert characters that are illegal in a string, use an escape character.
+
+An escape character is a backslash \ followed by the character you want to insert.
+
+An example of an illegal character is a double quote inside a string that is surrounded by double quotes:
+
+You will get an error if you use double quotes inside a string that is surrounded by double quotes:
+txt = "We are the so-called "Vikings" from the north."
+
+TO FIX THE ABOVE:
+The escape character allows you to use double quotes when you normally would not be allowed:
+txt = "We are the so-called \"Vikings\" from the north."
+
+## String Methods
+Python has a set of built-in methods that you can use on strings.
+
