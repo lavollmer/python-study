@@ -51,3 +51,27 @@ not	Reverse the result, returns False if the result is true
 Parentheses has the highest precedence, meaning that expressions inside parentheses must be evaluated first: print((6 + 3) - (6 + 3))
 
 Multiplication * has higher precedence than addition +, and therefor multiplications are evaluated before additions: print(100 + 5 * 3)
+
+## Precedence of Operators
+
+() Parentheses
+** Exponentiation
+* / // % Multiplication, division, floor division, modulus
++ - Addition and subtraction
+== != > >= < <= Comparisons, identity and membership operators
+
+NOTE: Addition + and subtraction - has the same precedence
+
+## Python Lists
+Lists are used to store multiple items in a single variable.
+
+Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.
+
+Lists are created using square brackets:
+Create a List:
+thislist = ["apple", "banana", "cherry"]
+print(thislist)
+
+### List Items
+List items are ordered, changeable, and allow duplicate values.
+List items are indexed, the first item has index [0], the second item has index [1] etc.
