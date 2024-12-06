@@ -169,3 +169,50 @@ print(thislist)
 If you do not specify the index, the pop() method removes the last item.
 
 The del keyword also removes the specified index:
+Remove the first item:
+
+thislist = ["apple", "banana", "cherry"]
+del thislist[0]
+print(thislist)
+
+## Loop Lists
+
+You can loop through the list items by using a for loop:
+Print all items in the list, one by one:
+
+thislist = ["apple", "banana", "cherry"]
+for x in thislist:
+  print(x)
+
+Loop through list items by referring to their index number - use range() and len() functions
+
+Print all items by referring to their index number:
+
+thislist = ["apple", "banana", "cherry"]
+for i in range(len(thislist)):
+  print(thislist[i])
+
+## While Loop
+
+Loop through the list items by using a while loop.
+
+Use the len() function to determine the length of the list. Start a 0 and loop your way through the list items by referring to their indexes.
+Remember to increase the index by 1 after each iteration.
+
+Print all items, using a while loop to go through all the index numbers
+
+thislist = ["apple", "banana", "cherry"]
+i = 0
+while i < len(thislist):
+  print(thislist[i])
+  i = i + 1
+
+
+List Comprehension
+A short hand for loop that will print all items in a list:
+
+thislist = ["apple", "banana", "cherry"]
+[print(x) for x in thislist]
+
+## List Comprehension
+
