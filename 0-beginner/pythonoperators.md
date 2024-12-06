@@ -122,3 +122,50 @@ Change the second and third value by replacing it with one value:
 thislist = ["apple", "banana", "cherry"]
 thislist[1:3] = ["watermelon"]
 print(thislist)
+
+### Insert Python
+To insert a new list item, without replacing any of the existing values, we can use the insert() method.
+
+The insert() method inserts an item at the specified index:
+
+Example
+Insert "watermelon" as the third item:
+
+thislist = ["apple", "banana", "cherry"]
+thislist.insert(2, "watermelon")
+print(thislist)
+
+### Add List Items
+Add an item to the end of list, use the append()
+
+Using the append() method to append an item:
+
+thislist = ["apple", "banana", "cherry"]
+thislist.append("orange")
+print(thislist)
+
+### Add one list to another list
+
+To append elements from another list to current list, use the extend()
+
+The extend() method does not have to append lists, you can add any iterable object (tuples, sets, dictionaries etc.).
+
+### Remove Specified Items
+
+The remove() method removes the specified item.
+
+Remove "banana":
+
+thislist = ["apple", "banana", "cherry"]
+thislist.remove("banana")
+print(thislist)
+
+Remove the second item:
+
+thislist = ["apple", "banana", "cherry"]
+thislist.pop(1)
+print(thislist)
+
+If you do not specify the index, the pop() method removes the last item.
+
+The del keyword also removes the specified index:
