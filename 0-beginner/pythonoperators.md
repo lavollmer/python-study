@@ -75,3 +75,50 @@ print(thislist)
 ### List Items
 List items are ordered, changeable, and allow duplicate values.
 List items are indexed, the first item has index [0], the second item has index [1] etc.
+
+Lists are used to store multiple items in a single variable.
+
+Ordered lists means that items have a defined order and the order will not change.
+
+Changeable list means that we can change, add and remove items in a list after it has been created.
+
+Since lists are indexed, they can have items with the same value.
+
+Determine list length use len().
+
+List items can be any data type.
+
+List items are indexed and you can access by referring to the index number.
+
+Negative indexing 
+Negative indexing means start from the end
+
+-1 refers to the last item, -2 refers to the second last item etc.
+
+### List Constructor
+
+Example
+Using the list() constructor to make a List:
+
+thislist = list(("apple", "banana", "cherry")) # note the double round-brackets
+print(thislist)
+
+### Change List Items
+
+To change the value of a specific item refer to the index number.
+
+Example
+Change the values "banana" and "cherry" with the values "blackcurrant" and "watermelon":
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
+thislist[1:3] = ["blackcurrant", "watermelon"]
+print(thislist)
+
+Note:  The length of the list will change when the number of items inserted does not match the number of items replaced.
+
+Example
+Change the second and third value by replacing it with one value:
+
+thislist = ["apple", "banana", "cherry"]
+thislist[1:3] = ["watermelon"]
+print(thislist)
