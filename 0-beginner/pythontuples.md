@@ -83,3 +83,26 @@ print(yellow)
 print(red)
 
 If the asterisk is added to another variable name than the last, Python will assign values to the variable until the number of values left matches the number of variables left.
+
+## Loop Tuples
+
+One can loop through tuple items by using a for loop.
+
+Print all items referring to their index number:
+thistuple = ("apple", "banana", "cherry")
+for i in range(len(thistuple)):
+  print(thistuple[i])
+
+## Using a While Loop
+You can loop through the tuple items by using a while loop.
+
+Use the len() function to determine the length of the tuple, then start at 0 and loop your way through the tuple items by referring to their indexes.
+
+Remember to increase the index by 1 after each iteration.
+
+
+thistuple = ("apple", "banana", "cherry")
+i = 0
+while i < len(thistuple):
+  print(thistuple[i])
+  i = i + 1 
