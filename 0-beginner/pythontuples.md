@@ -106,3 +106,15 @@ i = 0
 while i < len(thistuple):
   print(thistuple[i])
   i = i + 1 
+
+
+## Join Two Tuples
+
+To join two or more tuples use the + operator.
+
+If you want to multiple tuples, use the * operator.
+
+## Tuple Methods
+
+count() = returns the number of times a specified value occurs in a tuple
+index() = Searches the tuple for specified values and returns the position of where it was found
