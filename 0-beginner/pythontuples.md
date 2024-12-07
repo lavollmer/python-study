@@ -51,3 +51,35 @@ thistuple = ("apple", "banana", "cherry")
 del thistuple
 print(thistuple) #this will raise an error because the tuple no longer exists
 
+## Unpacking a Tuple
+
+When we create a tuple, we normally assign values to it. This is called "packing" a tuple.
+
+Packing a tuple: fruits = ("apple", "banana", "cherry")
+
+"Unpacking" a tuple is extracting the values back into variables.
+
+Unpacking a tuple:
+fruits = ("apple", "banana", "cherry")
+
+(green, yellow, red) = fruits
+
+print(green)
+print(yellow)
+print(red)
+
+Note: The number of variables must match the number of values in the tuple, if not, you must use an asterisk to collect the remaining values as a list.
+
+### Using Asterisk for tuples
+
+If the number of variables is less than the number of values, you can add an * to the variable name and the values will be assigned to the variable as a list:
+
+fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+
+(green, yellow, *red) = fruits
+
+print(green)
+print(yellow)
+print(red)
+
+If the asterisk is added to another variable name than the last, Python will assign values to the variable until the number of values left matches the number of variables left.
