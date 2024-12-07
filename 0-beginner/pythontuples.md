@@ -10,6 +10,8 @@ Tuples are written with round brackets.
 
 Creating a tuple with one item - To create a tuple with only one item, you have to add a comma after the item, otherwise Python will not recognize it as a tuple.
 
+Tuples are unchangeable, meaning that you cannot change, add, or remove items once the tuple is created.Tuples are unchangeable, or immutable as it also is called.
+
 ## Tuple Data Type
 
 From Python's perspective, tuples are defined as objects with the data type 'tuple':
@@ -26,3 +28,26 @@ Use the index number inside square brackets
 
 thistuple = ("apple", "banana", "cherry")
 print(thistuple[1])
+
+## Add Items to Tuples
+
+Tuples are immutable. Do not have builtin append().
+
+Ways to work around it.
+
+1. Convert it into a list - convert to a list, add items then convert back to a tuple
+
+2.Add tuple to a tuple - allowed to add tuples to tuples
+
+## Removing items in a tuple
+
+You cannot remove items in a tuple. They are unchangeable.
+
+Workarounds include:
+1. Convert to a list, remove item and convert back to list
+2. Delete the tuple completely
+SPECIAL CASE with error
+thistuple = ("apple", "banana", "cherry")
+del thistuple
+print(thistuple) #this will raise an error because the tuple no longer exists
+
