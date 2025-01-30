@@ -6,6 +6,7 @@ students = ["Hermione", "Harry", "Ron"]
 # print(students[1])
 # print(students[2])
 
+# Don't need to intialize the variable of student
 # loop - student is the variable in the list of students
 for student in students:
     print(student)
