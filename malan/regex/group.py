@@ -33,12 +33,12 @@ email = input("What's your email? ").strip()
 # re.DOTALL
 # can you use an fstring to pass in a variable
 # (...) group together
+# ? 0 or 1 repetition
+# re.match will automatically match
+# re.fullmatch will match beginning and end
 
-if re.search(r"^\w+@\w+\.edu$", email, re.IGNORECASE):
+if re.search(r"^(\w|\.)+@(\w+\.)?\w+\.edu$", email, re.IGNORECASE):
     print("valid")
 else:
     print("invalid")
     
-
-# [] inside of pattern and include set of characters
-# [^] complementing the set - you CANNOT match any of these characters
