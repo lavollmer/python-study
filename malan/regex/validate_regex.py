@@ -15,7 +15,9 @@ email = input("What's your email? ").strip()
 # if we get stuck in the invalid state then invalid
 # escape character for a newline = backsplash to match on a dot 
 # r means to treat raw string (similiar to f string)
-if re.search(r".+@.+\.edu", email):
+# ^ match the start of string
+# $ matches the end of the string just before the newline at the end
+if re.search(r"^.+@.+\.edu$", email):
     print("valid")
 else:
     print("invalid")
