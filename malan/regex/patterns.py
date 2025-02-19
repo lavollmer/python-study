@@ -10,7 +10,12 @@ def main():
     code = input("Hexadecimal color code: ")
 
     # r means create a raw string - i.e. backsplash chara won't be interpreted as backsplash with raw
-    pattern = r"#"
+    # [] is called a character set
+    # after finding hash symbol then should find the characters
+    # quantifiers - access with curly braces (ensures exactly of 6 characters)
+    # anchor - using a carrot at beginning and $ at the end
+    # $ last character should be the six characters
+    pattern = r"^#[0-9A-Fa-f]{6}$"
     # search the pattern in the code string which returns a match object
     match = re.search(pattern, code)
     if match:
