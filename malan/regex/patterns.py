@@ -10,7 +10,7 @@ def main():
     code = input("Hexadecimal color code: ")
 
     # r means create a raw string - i.e. backsplash chara won't be interpreted as backsplash with raw
-    # [] is called a character set
+    # [] is called a character set, A-Z is considered a RANGE
     # after finding hash symbol then should find the characters
     # quantifiers - access with curly braces (ensures exactly of 6 characters)
     # anchor - using a carrot at beginning and $ at the end
