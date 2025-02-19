@@ -22,6 +22,7 @@ url = input("URL: ").strip()
 # need backsplash before . to escape it
 # ? means 0 or 1 the character before
 # need parentheses to group
+# take these incremental steps - make sure it works, add it together
 username = re.sub(r"^(https?://)?(www\.)?twitter\.com/","",url)
 
 print(f"Username: {username}")
