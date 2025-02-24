@@ -1,5 +1,6 @@
 # keep all the related code togethed
 # raise exceptions - creating your own exceptions to alert the programmer there is an error
+# __str__ method in class by python
 class Student:
     def __init__(self, name, house):
         if not name:
@@ -9,10 +10,13 @@ class Student:
         # instance variable
         self.name = name
         self.house = house
+    # only takes self
+    def __str__(self):
+        return "a student"
 
 def main():
     student = get_student()
-    print(f"{student.name} from {student.house}")
+    print(student)
     
 def get_student():
     name = input("Name: ")
@@ -23,3 +27,5 @@ def get_student():
 
 if __name__=="__main__":
     main()
+
+# https://docs.python.org/3/tutorial/classes.html
