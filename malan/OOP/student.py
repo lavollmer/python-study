@@ -2,6 +2,7 @@ def main():
     # can return a tuple as a one variable
     # can index into a tuple and is immutable
     # no constraints on types of things in tuples
+        # tuple you can't change once it's been created
     student = get_student()
     if student[0] == "Padma":
         student[1] = "Ravenclaw"
