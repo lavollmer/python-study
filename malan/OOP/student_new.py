@@ -1,5 +1,6 @@
 # All my student specific functionality
 # Cleaning up all the code to be better designed
+# Calling main to the very end - everything exists, Class in own file then reuse it
 class Student:
     def __init__(self, name, house):
         self.name = name
