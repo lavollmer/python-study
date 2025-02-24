@@ -1,4 +1,5 @@
 class Food:
+    # embedding information about the class itself
     base_hearts = 1
 
     def __init__(self, ingredients):
