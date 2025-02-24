@@ -9,7 +9,18 @@ class Student:
         # instance variable
         self.name = name
         # going to call setter method
-        self._house = house
+        # would make it go to the setter without the underscore of _house
+        self.house = house
+
+    @property
+    def name(self):
+        return self._name
+    
+    @name.setter
+    def name(self, name):
+        if not name:
+            raise ValueError("missing name")
+        self._name = name
 
     def __str__(self):
         return f"{self.name} from {self.house}"
