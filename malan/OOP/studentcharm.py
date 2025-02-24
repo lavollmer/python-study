@@ -1,18 +1,30 @@
-# keep all the related code togethed
-# raise exceptions - creating your own exceptions to alert the programmer there is an error
-# __str__ method in class by python
+# property has a bunch of defense mechanisms
+# to prevent programmers from messing up functions
+# decorators functions that modify other functions
 class Student:
     def __init__(self, name, house):
         if not name:
             raise ValueError("Missing Name")
-        if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
-            raise ValueError("Invalid House")
         # instance variable
         self.name = name
+        # going to call setter method
         self.house = house
-    # only takes self
     def __str__(self):
         return f"{self.name} from {self.house}"
+    
+    # Getter
+    # function for a class that gets a value
+    @property
+    def house(self):
+        return self.house
+    
+    # Setter
+    # function for a class that sets a value
+    @house.setter
+    def house(self, house):
+        if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
+            raise ValueError("Invalid House")
+        self.house = house
 
 def main():
     student = get_student()
