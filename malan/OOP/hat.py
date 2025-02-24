@@ -1,6 +1,9 @@
 # class methods - instance of a class
 #functionality the same for each item
 # @classmethod = this is a class method and knows what class it is inside
+# NO @instancemethod exists
+# You can define a class inside of class
+# OOP has class
 
 import random
 
