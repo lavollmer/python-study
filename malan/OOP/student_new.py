@@ -17,6 +17,7 @@ class Student:
 
 
 def main():
+    # get Student class get function
     student = Student.get()
     print(student)
 
